@@ -1,0 +1,20 @@
+ALGORITHM Sentence Analysis
+VAR
+   nb.char: INTEGER :=0
+   nb.world: INTEGER :=0
+   nb.vowel: INTEGER :=0
+   c: CHAR
+BEGIN
+  WHILE (c<>".")) DO
+    read (c)
+    IF (c=" ") THEN
+        nb.world:= nb.world+1
+    END_IF
+    IF (c="A" OR c="E" OR c="Y" OR c="U" OR c="I" OR c="O") THEN
+        nb.vowel:= nb.vowel+1
+    END_IF
+  END_WHILE  
+  Write ("Nombre de charactéres est"nb.char-1)
+  Write ("Nombre de mots est"nb.world)
+  Write ("Nombre de voyelles est"nb.vowel)
+END
